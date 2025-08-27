@@ -1,0 +1,299 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.7;
+    color: #4A4A4A; /* Darker grey for better readability */
+    background-color: #F8F4E3; /* Soft, earthy background */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+}
+
+.section {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #FDF9EC; /* Lighter earthy background */
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.8rem; /* Slightly larger for impact */
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: white; /* Stays white against dark hero */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    font-size: 2.8rem; /* Slightly bolder */
+    margin-bottom: 3rem;
+    color: #A34E00; /* Richer, deep orange/saffron */
+}
+
+/* Hero Section */
+.hero {
+    /* Use an image that subtly hints at digital growth with warm tones, perhaps a desk setup in a sunlit room */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1550009139-44d7159d3d3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjVlMjJ8MHwxfHNlYXJjaHwxOXx8ZGlnaXRhbCUyMG1hcmtldGluZyUyMGNvbmNlcHR8ZW58MHx8fHwxNjk0NTY4MjY2&ixlib=rb-4.0.3&q=80&w=1920') no-repeat center center/cover;
+    color: white;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    animation: fadeIn 1.5s ease-out;
+}
+
+.price-box {
+    margin: 2rem 0;
+    font-weight: 700;
+}
+
+.original-price {
+    font-size: 1.6rem;
+    color: #FFDAB9; /* Lighter peach tone for original */
+    text-decoration: line-through;
+    margin-right: 1rem;
+}
+
+.discount-price {
+    font-size: 3.2rem; /* Slightly larger, more dominant */
+    color: #E67E22; /* Vibrant orange/saffron for discount */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button {
+    background-color: #E67E22; /* Dominant saffron for CTA */
+    color: white;
+    padding: 1.1rem 2.8rem; /* Slightly larger button */
+    text-decoration: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    font-size: 1.25rem;
+    font-weight: 700; /* Bolder text */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25); /* Stronger shadow */
+}
+
+.cta-button:hover {
+    background-color: #D35400; /* Darker orange on hover */
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
+}
+
+.limited-offer {
+    font-style: italic;
+    font-size: 1rem; /* Slightly larger */
+    margin-top: 1.2rem;
+    opacity: 0.9;
+    font-weight: 500; /* Make it a bit more visible */
+}
+
+/* Benefits & Testimonials Grid */
+.benefits-grid, .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted minmax */
+    gap: 2.5rem; /* Increased gap */
+    margin-top: 3.5rem;
+}
+
+.benefit-item, .testimonial-card {
+    background-color: white;
+    padding: 2.8rem; /* More padding */
+    border-radius: 12px; /* Softer rounded corners */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover, .testimonial-card:hover {
+    transform: translateY(-10px); /* More pronounced lift */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.icon-brand {
+    color: #E67E22; /* Saffron for brand icons */
+    font-size: 3rem; /* Larger icons */
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    font-weight: 700;
+    margin-top: 1.2rem;
+    color: #A34E00; /* Deep orange for author */
+}
+
+/* Course Modules (Accordion) */
+.modules-list {
+    list-style: none;
+    padding: 0;
+    max-width: 850px; /* Wider accordion */
+    margin: 0 auto;
+    text-align: left;
+}
+
+.module-item {
+    background-color: white;
+    border: 1px solid #E0DBCF; /* Softer border */
+    border-radius: 10px;
+    margin-bottom: 1.2rem; /* More space between modules */
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Light shadow for modules */
+}
+
+.module-header {
+    padding: 1.8rem; /* More padding */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #FDF9EC; /* Matches light bg */
+    border-bottom: 1px solid #EEE9D8; /* Subtle separator */
+}
+
+.module-header i {
+    font-size: 1.6rem; /* Slightly larger icons */
+    color: #A34E00; /* Deep orange for module icons */
+}
+
+.module-header h3 {
+    margin: 0;
+    flex-grow: 1;
+    margin-left: 1.2rem; /* More spacing */
+    font-size: 1.35rem; /* Larger module titles */
+    color: #2c3e50;
+}
+
+.module-content {
+    padding: 0 1.8rem; /* Matches header padding */
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.module-item.active .module-content {
+    max-height: 250px; /* Adjusted as needed for more content */
+    opacity: 1;
+    padding-bottom: 1.8rem;
+}
+
+.module-item.active .module-header .fa-plus {
+    transform: rotate(45deg);
+    color: #E67E22; /* Saffron when active */
+}
+
+/* Instructor Section */
+.instructor-grid {
+    display: flex;
+    align-items: center;
+    gap: 4rem; /* More gap */
+    text-align: left;
+}
+
+.instructor-image img {
+    width: 280px; /* Larger image */
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #E67E22; /* Saffron border */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* Shadow for depth */
+}
+
+.instructor-info h3 {
+    font-size: 2.2rem; /* Larger name */
+    color: #333;
+}
+
+.instructor-title {
+    font-style: italic;
+    color: #8A6D3B; /* Earthy brown for title */
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+}
+
+/* Final CTA Section */
+.final-cta {
+    background-color: #4A4A4A; /* Deep grey/blue for strong contrast */
+    color: white;
+    padding: 5rem 0;
+}
+
+.final-cta h2 {
+    color: white;
+}
+
+.price-box-final {
+    margin-bottom: 2.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #353535; /* Darker grey */
+    color: #D4D4D4; /* Lighter grey for text */
+    text-align: center;
+    padding: 2.8rem 0; /* More padding */
+    font-size: 0.95rem;
+}
+
+/* Animations (unchanged, but good to keep) */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        padding: 8rem 0;
+    }
+
+    .cta-button {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .benefits-grid, .testimonial-grid, .instructor-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .instructor-grid {
+        flex-direction: column;
+    }
+
+    .instructor-image {
+        order: -1; /* Puts image above text on small screens */
+    }
+
+    .instructor-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .module-header h3 {
+        font-size: 1.1rem;
+    }
+}
