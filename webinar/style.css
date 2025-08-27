@@ -1,0 +1,350 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.7;
+    color: #444;
+    background-color: #f8f9fa;
+}
+
+/* Hero Section - The Main Visual Makeover */
+.hero {
+    /* Use a more professional, relevant background image with a higher resolution */
+    background: url('https://images.unsplash.com/photo-1596556108117-915904838e55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjVlMjJ8MHwxfHNlYXJjaHwxNXx8QUklMjBzdHVkZW50JTIwY29tcHV0ZXJ8ZW58MHx8fHwxNjk0NDg1MDQ0&ixlib=rb-4.0.3&q=80&w=1920') no-repeat center center/cover;
+    position: relative;
+    padding: 12rem 0; /* Increase padding for more space */
+    text-align: center;
+    color: white;
+}
+
+/* Subtle overlay for better text readability */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Use a gradient to create a more dynamic look */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(12, 57, 107, 0.7));
+}
+
+/* Ensure content is on top of the overlay */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2s ease-out; /* Fade-in animation for a smooth entry */
+}
+
+/* Improve the typography */
+h1 {
+    font-size: 4rem; /* Larger font size for impact */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Add a text shadow for depth */
+}
+
+.hero-content p {
+    font-size: 1.25rem; /* Larger, more readable tagline */
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+/* Price Box - Make it the focal point */
+.price-box {
+    margin: 2.5rem 0 2rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Add a cool blur effect */
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.original-price {
+    font-size: 1.75rem;
+    color: #f1f1f1;
+    text-decoration: line-through;
+    margin-right: 1.5rem;
+    opacity: 0.7;
+}
+
+.discount-price {
+    font-size: 4rem; /* Significantly larger to draw attention */
+    color: #33d179; /* A vibrant green for "value" and "growth" */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite; /* A subtle pulsing effect */
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    background: linear-gradient(45deg, #007bff, #00bfff); /* A blue gradient */
+    color: white;
+    padding: 1.25rem 3rem; /* Larger button */
+    text-decoration: none;
+    border-radius: 50px; /* Fully rounded button */
+    font-size: 1.35rem;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #0056b3, #008cd6); /* Darken gradient on hover */
+}
+
+.limited-offer {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+}
+
+.section {
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #e9ecef;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1518770660439-466d3a04918e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjVlMjJ8MHwxfHNlYXJjaHwxNXx8QUklMjBhbmQlMjBNTCUyMGNhcmVlcnN8ZW58MHx8fHwxNjk0NTY4MjY2&ixlib=rb-4.0.3&q=80&w=1920') no-repeat center center/cover;
+    color: white;
+    padding: 10rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    animation: fadeIn 1.5s ease-out;
+}
+
+.price-box {
+    margin: 2rem 0;
+    font-weight: 700;
+}
+
+.original-price {
+    font-size: 1.5rem;
+    color: #ccc;
+    text-decoration: line-through;
+    margin-right: 1rem;
+}
+
+.discount-price {
+    font-size: 3rem;
+    color: #ffc107;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.limited-offer {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Webinar Info & Learning Grids */
+.info-grid, .learning-grid, .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.info-item, .learning-item, .testimonial-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover, .learning-item:hover, .testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-blue {
+    color: #007bff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.learning-item i {
+    color: #007bff;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.learning-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Speaker Section */
+.speaker-grid {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+}
+
+.speaker-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #007bff;
+}
+
+.speaker-info h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.speaker-title {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+/* Testimonial Section */
+.testimonial-card p {
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #007bff;
+}
+
+/* Registration Form */
+.register-section {
+    background-color: #fff;
+}
+
+.register-info {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 1rem auto 3rem;
+}
+
+#registration-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+#payment-message {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #28a745;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 2.5rem 0;
+    font-size: 0.9rem;
+}
