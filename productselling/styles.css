@@ -1,0 +1,305 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.7;
+    color: #444;
+    background-color: #fcfcfc;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+}
+
+.section {
+    padding: 6rem 0;
+    text-align: center;
+    overflow: hidden; /* For animations */
+}
+
+.section-description {
+    max-width: 700px;
+    margin: 1rem auto 3rem;
+    font-size: 1.15rem;
+    color: #666;
+}
+
+.bg-light {
+    background-color: #fefef5; /* A slightly warmer off-white */
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #a87e00; /* Richer gold */
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
+}
+
+/* Buttons */
+.cta-button {
+    background-color: #ffc107; /* Golden yellow */
+    color: #333;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #e0a800;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background-color: #a87e00;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: normal;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.btn-secondary:hover {
+    background-color: #7a5e00;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1549429715-e215f9b4f620?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjVlMjJ8MHwxfHNlYXJjaHwxNXx8ZGVzZXJ0JTIwYmxvb21zfGVufDB8fHx8MTY5NDU2NzE3Mw&ixlib=rb-4.0.3&q=80&w=1920') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 15rem 0;
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Layouts */
+.about-grid, .harvesting-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    text-align: left;
+}
+
+.about-image img, .harvesting-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.about-text p, .harvesting-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Features, Products, Benefits Grids */
+.feature-grid, .product-grid, .benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.feature-item, .benefit-item {
+    flex: 1 1 250px;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.feature-item:hover, .benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item {
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.product-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-item h3 {
+    margin: 1.5rem 0 0.5rem;
+    color: #333;
+}
+
+.product-item p {
+    padding: 0 1.5rem;
+}
+
+.price {
+    color: #e0a800;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+/* Testimonial Slider */
+.testimonial-slider {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.testimonial-item {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: normal;
+}
+
+.testimonial-item .quote {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.testimonial-item .author {
+    font-weight: bold;
+    color: #a87e00;
+}
+
+.slider-nav {
+    margin-top: 2rem;
+}
+
+.slider-nav button {
+    background: none;
+    border: 1px solid #ccc;
+    color: #888;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.slider-nav button:hover {
+    background-color: #eee;
+    color: #333;
+    border-color: #888;
+}
+
+/* Call to Action Banner */
+.cta-banner {
+    background-color: #a87e00;
+    color: white;
+    padding: 5rem 0;
+}
+
+.cta-banner h2 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 2.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer .social-links a {
+    color: #ddd;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #ffc107;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .about-grid, .harvesting-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-text, .harvesting-text {
+        text-align: center;
+    }
+}
